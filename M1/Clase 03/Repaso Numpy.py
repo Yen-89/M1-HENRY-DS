@@ -86,7 +86,33 @@ print(b.shape)
 print(x.shape)
 
 #rshape para cambiar las dimensiones de las matrices o arreglos(arrays)
+c = np.full((4,4), 8)
+print(c, "full")
+d = np.reshape(c, [2,8]) 
+print(d)
 
+#Matriz transpuesta
+e = d.T
+print(e, "Transpuesta") 
+
+#slicing con arrays es para que nos traiga los indices que queramos más corto
+np.set_printoptions(precision=2)
+f = np.random.rand(4,4)
+print(f, "precis")
+print(f[1,2])
+print(f[:,1]) #que me devuelva toda la columna 1
+print(f[1,:]) #que traiga la fila 1 y toda la columna
+
+print(f[:2,:2]) #para que traiga una parte de la fila y una de columna
+
+#promedio
+print(np.mean(f))
+
+#máscaras sirven 
+secuencia_2 = np.arange(20).reshape(5,4)
+mascara = secuencia_2 % 2 == 0  #quiero scaar los # pares 
+print(mascara, "mascara")   #con esto me muestra cual cumple como # par del array o variable
+print(secuencia_2[mascara]) #con esta forma me muestra solo lo que quiero en #
 
 #solución punto c ejercicio 1
 arr_1 = np.array([4,5,6,7])

@@ -21,3 +21,9 @@ Loq ue no va dentor de parentiesis se le considera un atributo, cómo el .shape 
 cuando sale en el tipo de dato por ejemplo 'int32' el 32 es la cantidad de bytes
 
 Con r.shape puedo cambiar las dimensiones de la matriz o arreglo(array)
+
+Tener en cuenta que en una matriz no se puede cambiar el tamaño pero si los elementos, ya que por ejemplo tenemos una matriz que se creó con (4,4) da 16, entonces podemos modificarla con 2,8 u 8,2 o 16,1 pero que sigan la misma cantidad de 16 elementos 
+
+np.set_printoptions(precision=2)
+
+
